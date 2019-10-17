@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>ParamTest</display-name>
+	<context-param>
+		<param-name>benq</param-name>
+		<param-value>123456789</param-value>
+	</context-param>
+
+	<servlet>
+		<display-name>ParamServlet</display-name>
+		<servlet-name>ParamServlet</servlet-name>
+		<servlet-class>x.y.z.ParamServlet</servlet-class>
+		<init-param>
+			<description>파랑</description>
+			<param-name>color</param-name>
+			<param-value>blue</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ParamServlet</servlet-name>
+		<url-pattern>/paramServlet</url-pattern>
+	</servlet-mapping>
+
+</web-app>
