@@ -4,12 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>emp/login</title>
+<title>empUpdate</title>
 </head>
 <body>
-<h1>emp/login</h1>
-<form action="loginResult" method="get">
-<label for="empno">empno:</label> <input type="text" id="empno" name="empno" autofocus="autofocus" required="required"/>
+<h1>empUpdate</h1>
+<form action="empUpdateProc" method="get">
+<label for="empno">사원번호: </label> <input type="text" id="empno" name="empno" autofocus="autofocus" required="required"/>
 <input type="submit" value="입력"/>
 </form>
 <br><br>

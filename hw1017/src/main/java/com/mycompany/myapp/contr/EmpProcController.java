@@ -21,6 +21,11 @@ public class EmpProcController {
 
 	}
 
+	@RequestMapping("/login")
+	public void login(int empno,Model model) {
+		model.addAttribute("emp",service.getEmp(empno));
+	}
+
 	@RequestMapping("/empUpdate")
 	public void empUpdate() {
 	}
