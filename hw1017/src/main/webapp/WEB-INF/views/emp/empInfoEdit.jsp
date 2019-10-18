@@ -13,12 +13,11 @@
 	<br>
 	<c:if test="${!empty emp}">
 		<form action="empUpdateResult" method="POST">
-			사원번호 <input type="text" name="empno" value="${emp.empno}"
-				readonly="readonly" /><br> 이름 <input type="text" name="ename"
-				value="${emp.ename}" /><br> 업무 <input type="text" name="job"
-				value="${emp.job}" /><br> 상사 <input type="text" name="mgr"
-				value="${emp.mgr}" /><br>
-			<br> <input type="submit" value="수정" />
+			사원번호 <input type="text" name="empno" value="${emp.empno}" readonly="readonly" /><br>
+			이름 <input type="text" name="ename" value="${emp.ename}" /><br>
+			업무 <input type="text" name="job" value="${emp.job}" /><br>
+			상사 <input type="text" name="mgr" value="${emp.mgr}" /><br><br> 
+			<input type="submit" value="수정" />
 		</form>
 	</c:if>
 	<br>

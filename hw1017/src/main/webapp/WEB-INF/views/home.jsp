@@ -12,6 +12,8 @@
 	
 	<h2>emp</h2>
 	<a href="emp/empList">empList</a><br>
-	<a href="emp/empUpdate">empUpdate</a>
+	<a href="emp/empUpdate">empUpdate</a><br>
+	<h2>dept</h2>
+	<a href="dept/login">login-empInsert</a><br>
 </body>
 </html>
