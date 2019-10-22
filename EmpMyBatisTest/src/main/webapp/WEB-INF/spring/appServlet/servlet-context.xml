@@ -53,5 +53,15 @@
 
 	<mybatis-spring:scan base-package="com.bit.gangnam.dao" />
 	<context:annotation-config/>
+	
+	<beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+	 <beans:property name="defaultEncoding" value="utf-8"/>
+	 <beans:property name="maxUploadSize" value="10000000"/>
+	 <beans:property name="uploadTempDir" value="uploadtemp"/>
+	</beans:bean>
+	
+	<beans:bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+		<beans:property name="basename" value="messages"/>
+	</beans:bean>
 
 </beans:beans>

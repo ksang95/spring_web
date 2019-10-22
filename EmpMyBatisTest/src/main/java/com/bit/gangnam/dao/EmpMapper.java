@@ -11,4 +11,5 @@ public interface EmpMapper {
 	List<Emp> getEmpList();
 	int updateEmp(Emp emp);
 	Emp getEmp(int empno);
+	int insertEmp(Emp emp);
 }

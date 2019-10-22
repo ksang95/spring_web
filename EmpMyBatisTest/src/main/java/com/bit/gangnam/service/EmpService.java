@@ -8,4 +8,5 @@ public interface EmpService {
 	List<Emp> getEmpList();
 	int updateEmp(Emp emp);
 	Emp getEmp(int empno);
+	int insertEmp(Emp emp);
 }

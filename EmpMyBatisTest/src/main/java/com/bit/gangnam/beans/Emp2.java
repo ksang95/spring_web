@@ -2,17 +2,28 @@ package com.bit.gangnam.beans;
 
 import java.util.List;
 
-public class Emp {
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.Range;
+
+public class Emp2 {
+	@NotNull@Range(min=1,max=9999)
 	private int empno;
+	@NotEmpty@Size(min=3,max=10)
 	private String ename;
 	private String job;
+	@NotNull@Range(min=1,max=9999)
 	private int mgr;
-	private List<Emp> emps;
+	private List<Emp2> emps;
 	
-	public Emp() {
+	public Emp2() {
 	}
 
-	public Emp(int empno, String ename, String job, int mgr) {
+	public Emp2(int empno, String ename, String job, int mgr) {
 		super();
 		this.empno = empno;
 		this.ename = ename;
@@ -20,11 +31,11 @@ public class Emp {
 		this.mgr = mgr;
 	}
 
-	public List<Emp> getEmps() {
+	public List<Emp2> getEmps() {
 		return emps;
 	}
 
-	public void setEmps(List<Emp> emps) {
+	public void setEmps(List<Emp2> emps) {
 		this.emps = emps;
 	}
 
@@ -82,7 +93,7 @@ public class Emp {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Emp other = (Emp) obj;
+		Emp2 other = (Emp2) obj;
 		if (empno != other.empno)
 			return false;
 		if (ename == null) {

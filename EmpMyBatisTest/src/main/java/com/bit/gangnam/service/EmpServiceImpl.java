@@ -26,5 +26,10 @@ public class EmpServiceImpl implements EmpService{
 		// TODO Auto-generated method stub
 		return empMapper.getEmp(empno);
 	}
+	@Override
+	public int insertEmp(Emp emp) {
+		// TODO Auto-generated method stub
+		return empMapper.insertEmp(emp);
+	}
 
 }

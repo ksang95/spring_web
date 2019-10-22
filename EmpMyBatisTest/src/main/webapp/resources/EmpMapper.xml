@@ -12,4 +12,7 @@ PUBLIC "-//mybatis.org//DTDMapper3.0//EN"
 	<update id="updateEmp" parameterType="com.bit.gangnam.beans.Emp">
 		update emp set ename = #{ename}, job = #{job}, mgr = #{mgr} where empno = #{empno}
 	</update>
+	<insert id="insertEmp" parameterType="com.bit.gangnam.beans.Emp">
+		insert into emp(empno, ename, job, mgr) values(#{empno},#{ename},#{job},#{mgr})
+	</insert>
 </mapper>
